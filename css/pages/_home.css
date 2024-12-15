@@ -1,0 +1,54 @@
+.home {
+    padding: 130px 0 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 70px;
+}
+
+.home-text,
+.home-img {
+    grid-column: span 6;
+    align-self: center;
+}
+
+
+.home-text h1 {
+    font-size: var(--fs-lg-ex);
+    margin: 0 0 20px;
+    text-transform: capitalize;
+}
+
+.home p {
+    margin: 0 0 30px;
+}
+
+
+.home-img {
+    position: relative;
+}
+
+.home-img img {
+    max-width: 270%;
+    display: block;
+    margin: auto;
+    user-select: none;
+}
+
+.home-img .circle-backdrop {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+   
+}
+
+.home-img .circle {
+    width: 350px;
+    height: 350px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

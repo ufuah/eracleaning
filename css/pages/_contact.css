@@ -1,0 +1,86 @@
+.contact-grid {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info {
+    grid-column: span 5;
+}
+
+.contact-form {
+    grid-column: span 7;
+}
+
+.contact-info-item {
+    position: relative;
+    padding: 20px 0 20px 70px;
+}
+
+.contact-info-item + .contact-info-item {
+    margin-top: 20px;
+    border-top: 1px solid var(--text-color);
+}
+
+.contact-info-item i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.contact-info-item h3 {
+    margin: 0 0 10px;
+    font-size: var(--fs-x);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* form styling */
+.input-box {
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: var(--text-x-dark-gray);
+    opacity: 1;
+}
+
+.input-control {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--form-border);
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    color: var(--text-x-dark-gray);
+    padding: 0 20px;
+}
+
+.input-control:focus {
+    outline: transparent;
+
+}
+
+.input-control::-webkit-scrollbar {
+    display: none;
+}
+
+textarea.input-control {
+    display: block;
+    height: 150px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.contact-info-item p:last-child {
+    margin: 0;
+}

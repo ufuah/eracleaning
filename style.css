@@ -1,0 +1,53 @@
+/* global */
+@import url(./css/extra/_global.css);
+
+/* variable */
+@import url(./css/extra/_variables.css);
+
+/* style-switcher */
+@import url(./css/extra/style-switcher.css);
+
+/* social-style */
+@import url(./css/pages/_socials.css);
+
+
+/* style-switcher */
+@import url(./css/extra/_scrollbar.css);
+
+
+/* btn */
+@import url(./css/extra/_btn.css);
+
+/*--------- page styling ---------*/
+
+/* header-style */
+@import url(./css/pages/_header.css);
+
+/* home-style */
+@import url(./css/pages/_home.css);
+
+
+/* about-us-style */
+@import url(./css/pages/_about.css);
+
+/* service-style */
+@import url(./css/pages/_service.css);
+
+/* price-style */
+@import url(./css/pages/_pricing.css);
+
+/* team-style */
+@import url(./css/pages/_team-item.css);
+
+/* contact-style */
+@import url(./css/pages/_contact.css);
+
+/* footer-style */
+@import url(./css/pages/_footer.css);
+
+/* social-style */
+@import url(./css/pages/_socials.css);
+
+/* media-style */
+@import url(./css/extra/_media.css);
+

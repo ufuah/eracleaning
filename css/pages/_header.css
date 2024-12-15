@@ -1,0 +1,147 @@
+.page-wrapper {
+    overflow: hidden;
+}
+
+.Whatsapp-mobile {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.header {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transform: translateY(calc(-100% - 10%));
+    transition: transform 0.5s ease;
+}
+
+.header.menu-bg::before {
+    transform: translateY(0);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 16%;
+    height: 44px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.header .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    display: block;
+    transform: scaleX(0.9) translateY(-2px) translateX(14px);
+    letter-spacing: 2px;
+    color: #4fc8cc;
+}
+
+.header .logo span {
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+    color: var(--text-x-dark-gray);
+}
+
+.nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.nav a {
+    text-transform: capitalize;
+    font-size: var(--fs-md);
+    color: var(--text-x-dark-gray);
+    font-weight: var(--fw-4);
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--main-color);
+}
+
+.button-header {
+    background: #3a3939;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button-header:hover .fa-brands {
+   color: #ffffff;
+}
+
+.Whatsapp {
+    position: relative;
+    bottom: 4px;
+}
+
+
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    align-items: center;
+    transition: 0.3s ease;
+    color: #363636;
+}
+
+.fa-brands i{
+    font-size: 18px;
+    color: #363636;
+}
+
+
+.button-header .fa-whatsapp {
+    color: #e9f0e7;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wht:hover {
+    background: #20c200;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-toggle {
+    display: none;
+}
